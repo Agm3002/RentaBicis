@@ -1,0 +1,17 @@
+body, html{
+    height: 100%;
+    font-family: "Raleway", sans-serif
+}
+
+body{
+    /*background-color: rgb(219, 219, 219);*/
+    background-color: #ccc;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    background-color: white;
+}
