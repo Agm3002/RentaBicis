@@ -1,0 +1,65 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.caja {
+    padding: 70px;
+    margin: 20px;
+    background-color: white;
+}
+
+.superior {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid #ccc 2px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+h1 {
+    padding-left: 20px;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.datosPersonales {
+    grid-column-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+h2 {
+    font-weight: bold;
+    border-bottom: solid #ccc 2px; 
+}
+
+.estadisticas {
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.datos1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.datos2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+svg {
+    margin-right: 15px;
+}
