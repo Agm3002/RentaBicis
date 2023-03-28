@@ -19,17 +19,17 @@
             </div>
             <div class="parent">
                 <div class="div1">
-                    <input type="text" id="cuenta" name="cuenta" placeholder="**** / **** / **** / ****" maxlength="54" required>
+                    <input type="number" id="cuenta" name="cuenta" class="numeros" placeholder="**** / **** / **** / ****" maxlength="16" required>
                     <input type="text" id="nombrePropietario" name="nombrePropietario" placeholder="Nombre del Propietario" maxlength="54" required>
                 </div>
                 <div class="div2">
                     <p>Fecha Vencimiento</p>
-                    <input type="text" id="fechaVenMes" name="fechaVenMes" class="fechaVen" placeholder="mm" maxlength="108" required>
-                    <input type="text" id="fechaVenAño" name="fechaVenAño" class="fechaVen" placeholder="aaaa" maxlength="108" required>
+                    <input type="number" id="fechaVenMes" name="fechaVenMes" class="fechaVen" placeholder="mm" maxlength="2" required>
+                    <input type="number" id="fechaVenAño" name="fechaVenAño" class="fechaVen" placeholder="aaaa" maxlength="4" required>
                 </div>
                 <div class="div3">
                     <p>Código de Seguridad</p>
-                    <input type="text" id="cvv" name="cvv" class="cvv" placeholder="CVV" maxlength="108" required>
+                    <input type="number" id="cvv" name="cvv" class="cvv" placeholder="CVV" maxlength="3" required>
                 </div>
                 <div class="boton">
                     <button class="boton1" type="submit" name="introducir" value="Introducir">Introducir</button>
@@ -37,5 +37,50 @@
             </div>
         </form>
     </div>
+    
+    <script>
+        function validateInput() {
+            const cuenta = document.getElementById("cuenta");
+            const fechaVenMes = document.getElementById("fechaVenMes");
+            const fechaVenAño = document.getElementById("fechaVenMes");
+            const cvv = document.getElementById("fechaVenMes");
+            const inputValuecuenta = cuenta.value.trim(); // Elimina espacios en blanco al inicio y al final
+            const inputValueMes = fechaVenMes.value.trim(); // Elimina espacios en blanco al inicio y al final
+            const inputValueAño = fechaVenAño.value.trim(); // Elimina espacios en blanco al inicio y al final
+            const inputValuecvv = cvv.value.trim(); // Elimina espacios en blanco al inicio y al final
+        
+            if (inputValuecuenta.length === 16) {
+                // La entrada es válida, envía el formulario o realiza la acción deseada
+                console.log("Entrada válida: " + inputValuecuenta);
+            } else {
+                // La entrada no es válida, muestra un mensaje de error
+                alert("Por favor ingrese 16.");
+            }
+
+            if (inputValueMes.length === 2) {
+                // La entrada es válida, envía el formulario o realiza la acción deseada
+                console.log("Entrada válida: " + inputValueMes);
+            } else {
+                // La entrada no es válida, muestra un mensaje de error
+                alert("Por favor ingrese 2.");
+            }
+
+            if (inputValueAño.length === 4) {
+                // La entrada es válida, envía el formulario o realiza la acción deseada
+                console.log("Entrada válida: " + inputValueAño);
+            } else {
+                // La entrada no es válida, muestra un mensaje de error
+                alert("Por favor ingrese 4.");
+            }
+
+            if (inputValuecvv.length === 3) {
+                // La entrada es válida, envía el formulario o realiza la acción deseada
+                console.log("Entrada válida: " + inputValuecvv);
+            } else {
+                // La entrada no es válida, muestra un mensaje de error
+                alert("Por favor ingrese 3.");
+            }
+        }
+    </script>
 </body>
 </html>

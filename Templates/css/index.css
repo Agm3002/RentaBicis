@@ -9,14 +9,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 
 .precioYboton button {
-    background-color: rgb(32, 32, 190);
-    color: white;
+    background-color: rgb(255, 234, 6);
+    color: black;
     width: 100px;
     height: 40px;
     border-radius: 10px;
     outline: none;
     border: none;
     font-weight: bold;
+    transition: 0.4s;
+}
+
+.precioYboton button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 234, 6),
+                0 0 20px rgb(223, 212, 88);
 }
 
 svg {

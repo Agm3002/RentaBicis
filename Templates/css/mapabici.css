@@ -11,7 +11,37 @@ body{
 .caja {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     padding: 50px;
     background-color: white;
+}
+
+.boton {
+    font-weight: bold;
+    background-color: rgb(255, 234, 6);
+    color: black;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(255, 234, 6),
+                0 0 20px rgb(223, 212, 88);
+}
+
+svg {
+    margin-right: 15px;
 }
